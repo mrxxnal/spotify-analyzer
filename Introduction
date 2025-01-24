@@ -1,0 +1,35 @@
+# Spotilyzer
+
+Welcome to **Spotilyzer**, your comprehensive tool for analyzing and visualizing your Spotify listening habits. Connect your Spotify account to gain insights into your most-listened-to songs and artists, track your listening trends, and discover new music tailored to your tastes.
+
+## 🚀 Key Features
+
+- **Seamless Spotify Integration**: Easily connect and authenticate your Spotify account to access your listening data securely.
+- **Comprehensive Analytics**: Rank your top songs and artists by total listening time, providing a clear overview of your musical preferences.
+- **Personalized Recommendations**: Receive curated suggestions for new music based on your most-listened tracks and artists.
+- **Intuitive Dashboard**: Explore your music statistics through a user-friendly and visually appealing interface.
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React.js for a dynamic and responsive user interface.
+- **Backend**: Node.js with Express.js to handle API requests and data processing.
+- **Database**: MongoDB for efficient storage and retrieval of user and listening data.
+- **Authentication**: Spotify OAuth for secure account linking and data access.
+- **Deployment**: Hosted on [Your Preferred Hosting Service], ensuring reliability and scalability.
+
+## 📥 Getting Started
+
+### **Prerequisites**
+
+- **Node.js** (v14 or later)
+- **npm** or **yarn**
+- **MongoDB Atlas** account (or your preferred MongoDB setup)
+- **Spotify Developer Account** with a registered application
+
+### **Installation**
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/mrxxnal/Spotilyzer.git
+   cd Spotilyzer
