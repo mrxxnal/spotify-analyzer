@@ -1,93 +1,47 @@
-/* General body styles */
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #3a007d, #097c01);
-    background-attachment: fixed;
-    color: #ffffff;
-    overflow-y: auto;
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap');
+
+/* General styles for typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 19ch;
+    }
 }
 
-/* Wrapper for content */
-.wrapper {
-    padding: 20px;
-    max-width: 1200px; /* Adjust width for a side-by-side layout */
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+/* Typing effect for the Welcome text */
+.typing-effect {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-size: 6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 16ch;
+    animation: typing 4s steps(16, end), blink 0.5s step-end infinite;
+    text-align: center;
     margin: 0 auto;
-    display: flex; /* Use flexbox to align sections side by side */
-    gap: 20px; /* Add space between sections */
-    justify-content: center; /* Center content horizontally */
-    align-items: flex-start; /* Align items at the top */
+    color: #f6ffda;
+    -webkit-text-stroke: 0.5px black; /* Thin black outline */
+    text-stroke: 0.5px black; /* Fallback for other browsers */
 }
 
-/* Section styles for Top Tracks and Artists */
-.section {
-    flex: 1; /* Equal width for both sections */
-    max-width: 600px;
-    padding: 20px;
-    border: 4px solid #15ff00;
-    border-radius: 8px;
-    background-color: rgba(40, 40, 40, 0.8);
-    text-align: center; /* Center content */
-}
-
-/* Heading styles */
-/* Main heading with text border */
-h1 {
-    font-size: 5rem;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    margin-bottom: 30px;
-    color: #000000; /* Inner text color */
-    -webkit-text-stroke: 0.1px #1DB954; /* Spotify green border */
-    text-stroke: 0.1px #1DB954; /* Border thickness and color */
-    animation: fadeIn 6s ease-in-out;
-}
-
-
-/* Wrapper for heading and logo */
-.heading-wrapper {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: 'Pacifico', cursive;
-    color: #83e174;
-    animation: fadeIn 6s ease-in-out;
-}
-
-/* List styles */
-ul {
-    list-style: none;
-    padding: 0;
+/* Body styles */
+body {
     margin: 0;
-}
-
-ul li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    background-color: #282828;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-ul li:hover {
-    transform: scale(1.05);
-    background-color: #19c251;
-    color: #121212;
-}
-
-/* Main wrapper for the dashboard with artist background */
-.dashboard-wrapper {
-    position: relative; /* For positioning background images */
-    padding: 20px;
-    overflow: hidden; /* Hide anything overflowing */
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    background-color: #000;
 }

@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
-import Dashboard from './components/Dashboard'; // Ensure the paths are correct
+import Dashboard from './components/Dashboard';
 
-const App = () => {
+function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Login />} /> {/* Login page */}
-                <Route path="/dashboard" element={<Dashboard />} /> {/* Dashboard page */}
+                <Route path="/" element={<Login />} />
+                <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
         </Router>
     );
-};
+}
 
 export default App;
